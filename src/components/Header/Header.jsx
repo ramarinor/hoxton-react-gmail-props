@@ -1,6 +1,6 @@
 import "./Header.css";
 
-function Header() {
+function Header(props) {
 	return (
 		<header className="header">
 			<div className="left-menu">
@@ -12,7 +12,7 @@ function Header() {
 			</div>
 
 			<div className="search">
-				<input className="search-bar" placeholder="Search mail" />
+				<input className="search-bar" placeholder="Search mail" onKeyUp={(event) => props.setSearch(event.target.value)} />
 			</div>
 		</header>
 	);
