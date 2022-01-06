@@ -9,8 +9,8 @@ function Email(props) {
 			<div className="star">
 				<input className="star-checkbox" type="checkbox" checked={props.email.starred} onChange={() => props.toggleStar(props.email)} />
 			</div>
-			<div className="sender">{props.email.sender}</div>
-			<div className="title">{props.email.title}</div>
+			<div className="sender" onClick={() => props.setSelectedEmail(props.email)}>{props.email.sender}</div>
+			<div className="title" onClick={() => props.setSelectedEmail(props.email)}>{props.email.title}</div>
 		</li>
 	);
 }

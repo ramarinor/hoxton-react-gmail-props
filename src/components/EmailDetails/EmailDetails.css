@@ -1,0 +1,4 @@
+.app > .email-details {
+	grid-area: emails;
+	padding: 10px 0;
+}
