@@ -1,3 +1,5 @@
+import "./Emails.css";
+
 function Emails(props) {
 	return (
 		<main className="emails">
